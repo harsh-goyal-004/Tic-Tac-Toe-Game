@@ -71,6 +71,7 @@ newGame.addEventListener("click", () => {
       divO.classList.add("hide");
       divX.classList.add("hide");
     }
+    box.disabled = false;
   });
 });
 
