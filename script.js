@@ -22,6 +22,7 @@ boxes.forEach((box) => {
     if (box.innerText === "") {
       if (turn0) {
         box.innerText = "O";
+        box.style.color = "blue";
         turn0 = false;
       } else {
         box.innerText = "X";
@@ -44,13 +45,21 @@ const checkWinner = () => {
         if (pos1 === "X") {
           divX.classList.remove("hide");
           gameGrid.classList.add("transparent");
+          disableBoxes();
         } else {
           divO.classList.remove("hide");
           gameGrid.classList.add("transparent");
+          disableBoxes();
         }
       }
     }
   }
+};
+
+const disableBoxes = () => {
+  boxes.forEach((box) => {
+    box.disabled = true;
+  });
 };
 
 newGame.addEventListener("click", () => {
@@ -74,5 +83,6 @@ reset.addEventListener("click", () => {
       divO.classList.add("hide");
       divX.classList.add("hide");
     }
+    box.disabled = false;
   });
 });
