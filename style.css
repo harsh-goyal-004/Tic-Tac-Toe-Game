@@ -54,8 +54,8 @@ body {
 .div-x {
   background-color: #fff;
   margin-top: -2px;
-  height: 20vmin;
-  width: 25vmin;
+  height: 32vmin;
+  width: 32vmin;
   display: flex;
   justify-content: center;
   align-items: center;
