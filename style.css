@@ -40,7 +40,7 @@ body {
 }
 
 .box:focus{
-  outline: none;
+  outline: none !important;
 }
 
 .game-btn1,
