@@ -54,10 +54,14 @@ body {
   margin: 1rem;
 }
 
-.game-btn1,
+.game-btn1:focus {
+  outline: none !important;
+}
+
 .game-btn2:focus {
   outline: none !important;
 }
+
 
 .div-o,
 .div-x {
