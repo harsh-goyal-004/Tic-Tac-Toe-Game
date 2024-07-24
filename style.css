@@ -55,7 +55,7 @@ body {
 }
 
 .game-btn1,
-.game-btn2 {
+.game-btn2:focus {
   outline: none !important;
 }
 
