@@ -56,8 +56,7 @@ body {
 
 .game-btn1,
 .game-btn2 {
-  outline: none;
-
+  outline: none !important;
 }
 
 .div-o,
