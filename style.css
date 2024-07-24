@@ -37,6 +37,9 @@ body {
   box-shadow: rgba(0, 0, 0, 0.6) 5px 5px;
   font-size: 9vmin;
   color: red;
+}
+
+.box:focus{
   outline: none;
 }
 
