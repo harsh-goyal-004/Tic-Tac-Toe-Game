@@ -54,6 +54,12 @@ body {
   margin: 1rem;
 }
 
+.game-btn1,
+.game-btn2 {
+  outline: none;
+
+}
+
 .div-o,
 .div-x {
   background-color: #fff;
