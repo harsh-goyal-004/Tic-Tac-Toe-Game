@@ -33,6 +33,7 @@ boxes.forEach((box) => {
       }
 
       checkWinner();
+      checkDraw();
     }
   });
 });
