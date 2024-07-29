@@ -64,7 +64,8 @@ body {
 
 
 .div-o,
-.div-x {
+.div-x,
+.draw-msg{
   background-color: #fff;
   margin-top: -2px;
   height: 32vmin;
