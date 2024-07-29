@@ -4,6 +4,7 @@ let reset = document.querySelector(".game-btn2");
 let divX = document.querySelector("#divX");
 let divO = document.querySelector("#divO");
 let gameGrid = document.querySelector("#game-grid");
+let draw = document.querySelector("#draw");
 let turn0 = true;
 
 const winPatterns = [
@@ -22,7 +23,8 @@ boxes.forEach((box) => {
     if (box.innerText === "") {
       if (turn0) {
         box.style.color = "blue";
-        box.innerText = "O";
+        box.innerText = "O";
+
         turn0 = false;
       } else {
         box.style.color = "red";
@@ -57,6 +59,18 @@ const checkWinner = () => {
   }
 };
 
+const checkDraw = () => {
+  let count = 0;
+  boxes.forEach((box) => {
+    if (box.innerText != "") {
+      count++;
+    }
+  });
+  if (count == 9) {
+    draw.classList.remove("hide");
+  }
+};
+
 const disableBoxes = () => {
   boxes.forEach((box) => {
     box.disabled = true;
@@ -71,6 +85,7 @@ newGame.addEventListener("click", () => {
       gameGrid.classList.remove("transparent");
       divO.classList.add("hide");
       divX.classList.add("hide");
+      draw.classList.add("hide");
     }
     box.disabled = false;
   });
@@ -84,6 +99,7 @@ reset.addEventListener("click", () => {
       gameGrid.classList.remove("transparent");
       divO.classList.add("hide");
       divX.classList.add("hide");
+      draw.classList.add("hide");
     }
     box.disabled = false;
   });
