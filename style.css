@@ -79,7 +79,8 @@ body {
 }
 
 .winner-msg-x,
-.winner-msg-o {
+.winner-msg-o,
+.draw-msg-p{
   font-size: 2rem;
   color: #000;
   font-weight: 600;
